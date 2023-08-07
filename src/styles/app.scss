@@ -1,0 +1,42 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+  //Keep files which has static var definations on top while import so every scss file below it can access the varibles from it.
+
+  @import "staticVar";
+  @import "animations";
+
+  @import "header";
+  @import "home";
+  @import "work";
+  @import "timeline";
+  @import "services";
+  @import "contact";
+  @import "footer";
+  @import "mediaquery";
+
+  *{
+    margin: 0%;
+    padding: 0%;
+    font-family: $text2;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  a{
+    text-decoration: none;
+  }
+  body{
+    background-color: $color1;
+    overflow-x: hidden;
+  }
+
+  .disableBtn{
+    background-color: rgb(237, 237,237);
+    cursor: not-allowed !important;
+  }
+
+  #customMessage{
+    font: 900 2rem $text2;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }

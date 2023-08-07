@@ -1,0 +1,81 @@
+#services{
+    width: 100%;
+    height: 100vh;
+    padding: $p;
+    background-color: $color5;
+    color: $color4;
+    overflow: hidden;
+
+    >h2{
+        font: 700 2.5rem $text2;
+        width: fit-content;
+        border-bottom: 1px solid $color4;
+        padding: 0.5rem;
+        margin: auto;
+    }
+
+    >section{
+        display: grid;
+        margin: 3rem;
+        grid-template-columns: repeat(3,1fr);
+        height: 100%;
+        gap: 2rem;
+        > *{
+            //Will be applied to ll direct children of section TAG.
+            width: 100%;
+            height: 100%;
+            background-color: $color4;
+            color: $color6;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                //h offser , v offset , blur (Higher will me more blur) , spread(Size of shadow + will incease size negative will decrease) , Color
+                box-shadow: 0 0 5px 15px $color1;
+            }
+
+            >svg {
+                color: $color5;
+                font-size: 3rem;
+            }
+
+            >span{
+                font: 700 1rem $text2;
+                letter-spacing: 3px;
+                margin: 1rem;
+            }
+        }
+
+        #serviceBox1{
+            //CHECK EXP 1 YEAR SECTION..THAT IS BIG DUE TO GRID
+
+           //Grid column ==> it will extend column from 1 to 2 (START OF 2) that is normal....1 is grid-column-start and 2 is grid-column-end
+            grid-column: 1/2;
+
+             //Grid row ==> it will extend row from 1 to 3 (START OF 3) ....1 is grid-row-start and 3 is grid-row-end
+             grid-row: 1/3;
+            background-color: $color1;
+
+            >h3{
+                font: 100 5rem $text1;
+            }
+
+            >p{
+                font: 900 1.2rem $text2;
+                letter-spacing: 3px;
+            }
+        }
+
+        #serviceBox4{
+            //DESKTOP DEV SECTIOn
+
+             //Grid column ==> it will extend column from 2 to 4 (START OF 4) that is normal....2 is grid-column-start and 4 is grid-column-end
+
+            grid-column: 2/4;
+        }
+
+
+    }
+}

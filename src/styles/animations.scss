@@ -1,0 +1,32 @@
+@keyframes animateSvg{
+    to{
+        //given transform x -50 (home.scss => svg )which means mid on s axis horixoantal...our array need to animate vertically  thats why giving y = -10% here...
+        transform: translate(-50%,-10px);
+    }
+}
+
+
+//FOR TIMELINE Section
+
+@keyframes upanddown{
+    to{
+        transform: translateY(-5px);
+    }
+}
+
+
+@keyframes upupdowndown{
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes changeHeaderClr{
+    
+        0%   {color: red;}
+        25%  {color: rgb(255, 0, 174);}
+        50%  {color: blue;}
+        100% {color: green;}
+    
+}
+
